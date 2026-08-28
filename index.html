@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youssef Mostafa — Video Editor & Content Creator | Useed</title>
+  <meta name="description" content="Youssef (Useed) — Professional video editor, content creator and visual storyteller with 5+ years of experience. Trusted by Dyler, The Horror, POWR eSports, Kai Greene, Burger King, Snickers & more.">
+  <meta property="og:title" content="Youssef Mostafa — Video Editor & Content Creator">
+  <meta property="og:description" content="Professional video editor & visual storyteller. 5+ years crafting stories that people actually feel.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/thumbs/showreel.jpg">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-logo">USEED<span class="accent">.</span></span>
+      <span class="preloader-timecode">00:00:00:00</span>
+    </div>
+  </div>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">USEED<span class="accent">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" data-nav data-i18n="nav.about">About</a>
+        <a href="#clients" data-nav data-i18n="nav.clients">Clients</a>
+        <a href="#work" data-nav data-i18n="nav.work">Work</a>
+        <a href="#gallery" data-nav data-i18n="nav.gallery">Photos</a>
+        <a href="#awards" data-nav data-i18n="nav.awards">Awards</a>
+        <a href="#feedback" data-nav data-i18n="nav.feedback">Feedback</a>
+        <a href="#travel" data-nav data-i18n="nav.travel">Travel</a>
+      </nav>
+      <button class="lang-btn" id="langToggle" aria-label="Switch language"><i class="fa-solid fa-globe"></i> <span id="langLabel">العربية</span></button>
+      <a href="#contact" class="btn btn-sm btn-outline nav-cta" data-nav data-i18n="nav.cta">Let's Talk</a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container hero-inner">
+      <p class="hero-kicker reveal"><span class="rec-dot"></span><span data-i18n="hero.kicker">REC — Video Editor · Content Creator · Visual Storyteller</span></p>
+      <p class="hero-tagline reveal" data-delay="1" data-i18n-html="hero.tagline">We don't just make a video — <span class="grad-text">we make art.</span></p>
+      <h1 class="hero-title">
+        <span class="line reveal">YOUSSEF</span>
+        <span class="line line-stroke reveal" data-delay="1">MOSTAFA</span>
+      </h1>
+      <p class="hero-sub reveal" data-delay="2" data-i18n="hero.sub">I turn raw footage into stories people actually feel. <em>“Don't think about making art, just get it done.”</em></p>
+      <div class="hero-actions reveal" data-delay="3">
+        <button class="btn btn-primary" data-video="kLNikGYOT5E"><i class="fa-solid fa-play"></i> <span data-i18n="hero.btn1">Watch Showreel</span></button>
+        <a href="#work" class="btn btn-outline" data-i18n="hero.btn2">Explore My Work</a>
+      </div>
+      <div class="hero-stats reveal" data-delay="4">
+        <div class="stat"><span class="stat-num" data-count="5" data-suffix="+">0</span><span class="stat-label" data-i18n="hero.stat1">Years of Experience</span></div>
+        <div class="stat"><span class="stat-num" data-count="300" data-suffix="M+">0</span><span class="stat-label" data-i18n="hero.stat2">Views Generated</span></div>
+        <div class="stat"><span class="stat-num" data-count="22" data-suffix="+">0</span><span class="stat-label" data-i18n="hero.stat3">Brands &amp; Creators</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>DYLER&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;THE HORROR&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;POWR ESPORTS&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;KAI GREENE&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;NAIRA KAMAL&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;BURGER KING&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;SNICKERS&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;BIGO LIVE&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;</span>
+      <span>DYLER&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;THE HORROR&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;POWR ESPORTS&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;KAI GREENE&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;NAIRA KAMAL&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;BURGER KING&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;SNICKERS&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;BIGO LIVE&nbsp;<i class="fa-solid fa-star-of-life"></i>&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-media reveal">
+          <div class="about-frame">
+            <img src="assets/avatar.jpg" alt="Youssef Mostafa (Useed)" loading="lazy">
+          </div>
+          <div class="about-badge">
+            <span class="about-badge-num">5+</span>
+            <span data-i18n-html="about.badge">Years<br>Experience</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="sec-tag reveal" data-i18n="about.tag">// 01 — WHO AM I</p>
+          <h2 class="sec-title reveal" data-delay="1" data-i18n-html="about.title">One man. Every frame.<br><span class="grad-text">A complete story.</span></h2>
+          <p class="reveal" data-delay="2" data-i18n-html="about.p1">
+            I'm <strong>Youssef Mostafa — "Useed"</strong> — a <strong>video editor</strong> and <strong>content creator</strong>
+            with over <strong>5 years of experience</strong> in content creation and visual production.
+            I transform raw footage and ideas into professional visual content that reaches the audience and achieves the goal.
+          </p>
+          <p class="reveal" data-delay="3" data-i18n-html="about.p2">
+            I work as a <strong>One-Man Crew</strong> — a full production team on my own, from content writing and planning,
+            to shooting and directing, to editing and sound design, all the way to final delivery. I also have a solid background in
+            <strong>digital marketing</strong>, so I don't just care that content looks good — I make sure it fits the audience and serves its purpose.
+          </p>
+          <p class="reveal" data-delay="4" data-i18n-html="about.p3">
+            Alongside my work with clients and companies, I'm also a <strong>content creator</strong> who produces and releases my own
+            content on <strong>YouTube, Instagram &amp; TikTok</strong>. That gives me hands-on understanding of what grabs people's attention —
+            and how to turn a simple idea into strong, shareable, engaging content.
+          </p>
+          <p class="reveal about-dialect" data-delay="4" data-i18n-html="about.p4">
+            I speak both <strong>Egyptian</strong> and <strong>Gulf (Khaleeji)</strong> Arabic fluently — I lived
+            <strong>17 years in Saudi Arabia</strong> (Yanbu's Royal Commission).
+          </p>
+          <p class="reveal" data-delay="5" data-i18n-html="about.p5">
+            My goal is simple: to deliver <strong>professional content</strong> that combines quality and creativity — and always exceeds expectations.
+          </p>
+          <ul class="about-chips reveal" data-delay="5">
+            <li><i class="fa-solid fa-scissors"></i> <span data-i18n="chip.editing">Video Editing</span></li>
+            <li><i class="fa-solid fa-film"></i> <span data-i18n="chip.story">Storytelling</span></li>
+            <li><i class="fa-solid fa-video"></i> <span data-i18n="chip.videography">Videography</span></li>
+            <li><i class="fa-solid fa-camera-retro"></i> <span data-i18n="chip.photo">Photography</span></li>
+            <li><i class="fa-solid fa-chart-line"></i> <span data-i18n="chip.marketing">Digital Marketing</span></li>
+            <li><i class="fa-solid fa-user-gear"></i> <span data-i18n="chip.oneman">One-Man Crew</span></li>
+            <li><i class="fa-solid fa-rocket"></i> <span data-i18n="chip.create">Content Creator</span></li>
+          </ul>
+          <div class="about-actions reveal" data-delay="5">
+            <a href="assets/Yousef_Mostafa_CV.pdf" download target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> <span data-i18n="about.cv">Download CV</span></a>
+            <div class="about-socials">
+              <a href="https://www.youtube.com/@Useedx" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube — @Useedx"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.instagram.com/iuseedx/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram — @iuseedx"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@iuseedx" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok — @iuseedx"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="about-stats reveal" data-delay="5">
+            <div class="as"><span class="stat-num" data-count="80" data-suffix="K+">0</span><span class="as-label" data-i18n="about.stat1">Followers on my personal content</span></div>
+            <div class="as"><span class="stat-num" data-count="30" data-suffix="M">0</span><span class="as-label" data-i18n="about.stat2">Views on my personal content</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bachelor's degree — my story -->
+      <div class="degree-block reveal">
+        <div class="degree-media">
+          <div class="video-facade" data-video="kLNikGYOT5E">
+            <img src="assets/img/thumbs/grad-vlog.jpg" alt="My graduation story — from zero to a Bachelor's degree" loading="lazy">
+            <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <a href="assets/honor.jpg" data-lightbox="honor" class="degree-photo"><img src="assets/honor.jpg" alt="My graduation honor" loading="lazy"></a>
+        </div>
+        <div class="degree-body">
+          <span class="award-year reveal" data-i18n="deg.badge">🎓 BACHELOR'S DEGREE</span>
+          <h4 class="degree-heading reveal" data-i18n="deg.edhead">تعليمي:</h4>
+          <h3 class="reveal" data-delay="1" data-i18n="deg.title">BSc in Computer Science & Information Systems</h3>
+          <p class="reveal" data-delay="2" data-i18n-html="deg.uni">City of Culture &amp; Science — Class of <strong>2025</strong></p>
+          <p class="reveal" data-delay="3" data-i18n-html="deg.para">
+            Beyond the edit suite, I hold a <strong>Bachelor's in Computer Science &amp; Information Systems</strong> — <strong>graduated with Excellent Honors &amp; Distinction + 10th place across my cohort</strong>. This background sharpens my
+            technical edge — from logic and clean workflows to understanding the algorithms that drive the platforms I create for.
+            This video documents the full journey, from my very first steps to holding the certificate, and the honor I earned along the way.
+          </p>
+          <div class="degree-actions reveal" data-delay="4">
+            <a href="https://youtu.be/kLNikGYOT5E?t=1712" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-youtube"></i> <span data-i18n="deg.btn1">شاهد فلوق مناقشة مشروع التخرج</span></a>
+            <a href="https://youtu.be/rh269VeZaW4" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-youtube"></i> <span data-i18n="deg.btn2">شاهد فلوق حفلة تخرجي</span></a>
+          </div>
+          <div class="languages reveal" data-delay="5">
+            <h4 class="lang-head" data-i18n="deg.lang">Languages : <span class="lang-count">2</span></h4>
+            <div class="lang-item">
+              <div class="lang-top">
+                <span data-i18n="deg.langAr">Arabic</span>
+                <span class="lang-lv" data-i18n="deg.langArLv">Fluent</span>
+              </div>
+              <div class="lang-bar"><span class="lang-fill" data-lang="95"></span></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-top">
+                <span data-i18n="deg.langEn">English</span>
+                <span class="lang-lv" data-i18n="deg.langEnLv">Good</span>
+              </div>
+              <div class="lang-bar"><span class="lang-fill" data-lang="70"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTS ===== -->
+  <section class="section clients" id="clients">
+    <div class="container">
+      <p class="sec-tag center reveal" data-i18n="clients.tag">// 02 — CLIENTS &amp; COLLABORATIONS</p>
+      <h2 class="sec-title center reveal" data-delay="1" data-i18n-html="clients.title">Trusted by <span class="grad-text">industry leaders</span></h2>
+      <p class="sec-desc center reveal" data-delay="2" data-i18n="clients.desc">From mega-creators to global brands — requested by the biggest YouTubers in the Middle East.</p>
+      <div class="clients-grid">
+        <a class="client-card reveal" href="https://www.youtube.com/@Dyl3r" target="_blank" rel="noopener"><img src="assets/img/clients/dyler.jpg" alt="Dyler" loading="lazy"><h3>DYLER</h3><p data-i18n="role.r1">YouTuber · +8M Subscribers</p><span class="client-note" data-i18n="role.r1note">4+ years working together</span></a>
+        <a class="client-card reveal" data-delay="1" href="https://www.youtube.com/@the_horror" target="_blank" rel="noopener"><img src="assets/img/clients/the-horror.jpg" alt="The Horror" loading="lazy"><h3>THE HORROR</h3><p data-i18n="role.r2">YouTuber · +6.57M Subscribers</p></a>
+        <a class="client-card reveal" data-delay="2" href="https://www.youtube.com/@POWR-Esports" target="_blank" rel="noopener"><img src="assets/img/clients/powr.jpg" alt="POWR eSports" loading="lazy"><h3>POWR eSports | باور</h3><p data-i18n="role.r3">YouTuber · +6M Subscribers</p></a>
+        <a class="client-card reveal" data-delay="3" href="https://www.youtube.com/@Moskooo" target="_blank" rel="noopener"><img src="assets/img/clients/moskoo.jpg" alt="MOSKOO" loading="lazy"><h3>MOSKOO</h3><p data-i18n="role.r4">YouTuber · +1.1M Subscribers</p></a>
+        <a class="client-card reveal" href="https://www.youtube.com/@AG." target="_blank" rel="noopener"><img src="assets/img/clients/ag.jpg" alt="AG Abdullah" loading="lazy"><h3>AG l عبدالله</h3><p data-i18n="role.r5">YouTuber · +129K Subscribers</p></a>
+        <a class="client-card reveal" data-delay="1" href="https://www.youtube.com/@Useedx" target="_blank" rel="noopener"><img src="assets/img/clients/useed.jpg" alt="Useed" loading="lazy"><h3>Useed ( ME )</h3><p data-i18n="role.r6">YouTuber · +50K Subscribers</p></a>
+        <a class="client-card reveal" data-delay="2" href="https://www.youtube.com/@KaiGreeneOfficial" target="_blank" rel="noopener"><img src="assets/img/clients/kai-greene.png" alt="Kai Greene" loading="lazy"><h3>Kai Greene</h3><p data-i18n="role.r7">Blogger · +7.3M Followers</p></a>
+        <a class="client-card reveal" data-delay="3" href="https://www.instagram.com/nairaakamal/?hl=en" target="_blank" rel="noopener"><img src="assets/img/clients/naira-kamal.jpg" alt="Naira Kamal" loading="lazy"><h3>Naira Kamal</h3><p data-i18n="role.r8">Blogger · +3.6M Followers</p></a>
+        <a class="client-card reveal" href="https://www.google.com/search?q=Walaa+Samy+Sada+El+Balad" target="_blank" rel="noopener"><img src="assets/img/clients/walaa-samy.png" alt="Walaa Samy" loading="lazy"><h3>Walaa Samy</h3><p data-i18n="role.r10">TV Presenter at Sada El-Balad</p></a>
+        <a class="client-card reveal" data-delay="1" href="https://banaatfc.com/" target="_blank" rel="noopener"><img src="assets/img/clients/banaat-fc.jpg" alt="Banaat FC" loading="lazy"><h3>Banaat FC</h3><p data-i18n="role.r11">Women's Football Club</p></a>
+      </div>
+
+      <p class="sec-tag center companies-tag reveal" data-i18n="comp.tag">// TRUSTED BY BRANDS</p>
+      <h3 class="companies-title reveal" data-delay="1" data-i18n="comp.title">Brand Partnerships</h3>
+      <div class="logos-grid">
+        <div class="logo-cell reveal"><img src="assets/img/companies/ministry.png" alt="Ministry of Youth and Sports" loading="lazy"><span data-i18n="brand.b1">Ministry of Youth &amp; Sports</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/snickers.png" alt="Snickers" loading="lazy"><span>Snickers</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/bigo-live.png" alt="Bigo Live" loading="lazy"><span>Bigo Live</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/top-eleven.png" alt="Top Eleven" loading="lazy"><span>Top Eleven</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/axe.png" alt="Axe" loading="lazy"><span>Axe</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/burger-king.png" alt="Burger King" loading="lazy"><span>Burger King</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/freefire.jpg" alt="FreeFire Event" loading="lazy"><span data-i18n="brand.b7">FreeFire — Event</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/rawwy.jpg" alt="Rawwy LLC" loading="lazy"><span>Rawwy LLC</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/mlbb.jpg" alt="MLBB Esports MENA" loading="lazy"><span>MLBB Esports</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/zada.png" alt="Zada Developments" loading="lazy"><span data-i18n="brand.b10">Zada Developments</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/aqari-alyoum.jpg" alt="Aqari Alyoum Development" loading="lazy"><span data-i18n="brand.b11">Aqari Alyoum</span></div>
+        <div class="logo-cell reveal"><img src="assets/img/companies/arqa.jpg" alt="Arqa Development Group" loading="lazy"><span data-i18n="brand.b12">Arqa Group</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK : LONG VIDEOS ===== -->
+  <section class="section work" id="work">
+    <div class="container">
+      <p class="sec-tag reveal" data-i18n="work.tag">// 03 — PORTFOLIO</p>
+      <h2 class="sec-title reveal" data-delay="1" data-i18n-html="work.title">Featured long-form <span class="grad-text">productions</span></h2>
+      <div class="video-grid three">
+        <article class="video-card lg reveal">
+          <div class="video-facade" data-video="vipu-hBj-S0">
+            <img src="assets/img/thumbs/useed-story.jpg" alt="Useed — Live Marmoush's life for a day" loading="lazy">
+            <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <div class="video-meta">
+            <div><h3 data-i18n="work.v1t">😱🇪🇬 Useed - Live Marmoush's Life for a Full Day! - (Entertaining Storytelling)</h3><p data-i18n="work.v1s">Useed — يوسيد</p></div>
+            <a href="https://youtu.be/vipu-hBj-S0" target="_blank" rel="noopener" class="icon-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </article>
+        <article class="video-card lg reveal" data-delay="1">
+          <div class="video-facade" data-video="uAktBDwpJEE">
+            <img src="assets/img/thumbs/dyler-story.jpg" alt="Dyler — Storytelling style video" loading="lazy">
+            <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <div class="video-meta">
+            <div><h3 data-i18n="work.v2t">Dyler - Tried Living a Crazy Algerian 24 Hours! (with Bilal Fadili)</h3><p>Dyler — دايلر</p><span class="video-desc" data-i18n="work.v2d">عمل ترفيهي بالتعاون مع أكبر صانع محتوى جزائري بلال فاضيلي و دايلر</span></div>
+            <a href="https://youtu.be/uAktBDwpJEE" target="_blank" rel="noopener" class="icon-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </article>
+        <article class="video-card lg reveal" data-delay="2">
+          <div class="video-facade" data-video="jQIykNNcLnE">
+            <img src="assets/img/thumbs/horror-story.jpg" alt="THE HORROR — Story style video" loading="lazy">
+            <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <div class="video-meta">
+            <div><h3 data-i18n="work.v3t">Mahmoud El Seif : The 3 Most Dangerous SCP Foundation Creatures!!</h3><p>The Horror — مهند السيوف</p><span class="video-desc" data-i18n="work.v3d">فيديو ترفيهي لأكبر صانع محتوى في الاردن مهند السيوف تم تسليمه خلال 24 ساعة</span></div>
+            <a href="https://www.youtube.com/watch?v=jQIykNNcLnE" target="_blank" rel="noopener" class="icon-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </article>
+        <article class="video-card lg reveal" data-delay="3">
+          <div class="video-facade" data-video="T96yIs9eQMw">
+            <img src="assets/img/thumbs/aqari.jpg" alt="Aqari Alyoum Development — project video" loading="lazy">
+            <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <div class="video-meta">
+            <div><h3 data-i18n="work.v4t">The Egyptian Cup</h3><p data-i18n="work.v4s">Aqari Alyoum Development — عقاري اليوم</p><span class="video-desc" data-i18n="work.v4d">مسابقة عقارية تحت مسمى «كأس العقار»، تولّيت الإشراف عليها وتنفيذها من جميع الجوانب الإبداعية والفنية، بدءًا من كتابة المحتوى، مرورًا بالتصوير والإخراج، وصولًا إلى المونتاج والإنتاج النهائي.</span></div>
+            <a href="https://youtu.be/T96yIs9eQMw" target="_blank" rel="noopener" class="icon-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <p class="sec-tag reveal shorts-tag" data-i18n="shorts.tag">// SHORT-FORM</p>
+      <div class="shorts-head reveal" data-delay="1">
+        <h3 class="sec-subtitle" data-i18n="shorts.subtitle">Short-form highlights. Fast cuts, big impact.</h3>
+        <a href="https://www.youtube.com/@Useedx" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-youtube"></i> @Useedx</a>
+      </div>
+      <div class="reveal" data-delay="2">
+        <div class="shorts-strip" id="shortsStrip">
+          <!-- YouTube shorts -->
+          <article class="s-card">
+            <div class="s-media">
+              <div class="video-facade" data-video="xpYQL_kG8Y8">
+                <img src="assets/img/thumbs/short-1.jpg" alt="Short video 1" loading="lazy">
+                <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+              </div>
+            </div>
+            <div class="s-meta"><h3 data-i18n="shorts.t1">The Luck Challenge! 😳 - Breaking the Crossbar!</h3></div>
+          </article>
+          <article class="s-card">
+            <div class="s-media">
+              <div class="video-facade" data-video="zJa5YlXm4uw">
+                <img src="assets/img/thumbs/short-s1.jpg" alt="Short video 2" loading="lazy">
+                <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+              </div>
+            </div>
+            <div class="s-meta"><h3 data-i18n="shorts.t2">Water Bottle Challenge with Shamma 😂</h3></div>
+          </article>
+          <article class="s-card">
+            <div class="s-media">
+              <div class="video-facade" data-video="sRyz2ZZ4mao">
+                <img src="assets/img/thumbs/short-2.jpg" alt="Short video 3" loading="lazy">
+                <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+              </div>
+            </div>
+            <div class="s-meta"><h3 data-i18n="shorts.t3">Gangs Threatened Him at His Concert 😳🇲🇽!!</h3></div>
+          </article>
+          <article class="s-card">
+            <div class="s-media">
+              <div class="video-facade" data-video="DPM20h--U8k">
+                <img src="assets/img/thumbs/short-s2.jpg" alt="Short video 4" loading="lazy">
+                <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+              </div>
+            </div>
+            <div class="s-meta"><h3 data-i18n="shorts.t4">The Secret Behind the Ramadan Lanterns Story?! 😳</h3></div>
+          </article>
+          <article class="s-card">
+            <div class="s-media">
+              <div class="video-facade" data-video="2-fNUFxugmM">
+                <img src="assets/img/thumbs/short-s3.jpg" alt="Short video 5" loading="lazy">
+                <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+              </div>
+            </div>
+            <div class="s-meta"><h3 data-i18n="shorts.t5">My Latest Work.</h3></div>
+          </article>
+          <article class="s-card">
+            <div class="s-media">
+              <div class="video-facade" data-video="PHXPGXKSHQ8">
+                <img src="assets/img/thumbs/short-3.jpg" alt="Short video 6" loading="lazy">
+                <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+              </div>
+            </div>
+            <div class="s-meta"><h3 data-i18n="shorts.t6">Forbidden Hairstyles in Football! 😳</h3></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="gallery-head">
+        <p class="sec-tag reveal" data-i18n="gal.tag">// 04 — PHOTOGRAPHY &amp; VIDEOGRAPHY</p>
+        <h2 class="sec-title reveal" data-delay="1" data-i18n-html="gal.title">Event coverage through <span class="grad-text">my lens</span></h2>
+        <p class="sec-desc reveal" data-delay="2" data-i18n="gal.equip">Fully equipped with the latest professional camera gear — backed by 3+ years of professional event photography experience, ready to cover your event and deliver premium results.</p>
+        <div class="gal-badge reveal" data-delay="2">
+          <span class="gal-badge-ic"><img src="assets/img/companies/ministry.png" alt="Ministry of Youth and Sports logo" loading="lazy"></span>
+          <span>
+            <strong data-i18n="gal.badge">Certified Photographer — Egyptian Ministry of Youth &amp; Sports</strong>
+            <em data-i18n="gal.badgeSub">Selected from 100+ applicants</em>
+          </span>
+        </div>
+        <button class="btn btn-outline reveal" data-delay="3" id="galleryToggle"><i class="fa-solid fa-images"></i> <span data-i18n="gal.btn">Show Gallery</span></button>
+      </div>
+      <div class="masonry" id="masonry" hidden>
+        <a class="m-item tall reveal" href="assets/img/gallery/ph01.jpg" data-lightbox="gallery"><img src="assets/img/gallery/ph01.jpg" alt="Event coverage 1" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph02.jpg" data-lightbox="gallery" data-delay="1"><img src="assets/img/gallery/ph02.jpg" alt="Event coverage 2" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph03.jpg" data-lightbox="gallery" data-delay="2"><img src="assets/img/gallery/ph03.jpg" alt="Event coverage 3" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph04.jpg" data-lightbox="gallery"><img src="assets/img/gallery/ph04.jpg" alt="Event coverage 4" loading="lazy"></a>
+        <a class="m-item tall reveal" href="assets/img/gallery/ph05.jpg" data-lightbox="gallery" data-delay="1"><img src="assets/img/gallery/ph05.jpg" alt="Event coverage 5" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph06.jpg" data-lightbox="gallery" data-delay="2"><img src="assets/img/gallery/ph06.jpg" alt="Event coverage 6" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph07.jpg" data-lightbox="gallery"><img src="assets/img/gallery/ph07.jpg" alt="Event coverage 7" loading="lazy"></a>
+        <a class="m-item tall reveal" href="assets/img/gallery/ph08.jpg" data-lightbox="gallery" data-delay="1"><img src="assets/img/gallery/ph08.jpg" alt="Event coverage 8" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph09.jpg" data-lightbox="gallery" data-delay="2"><img src="assets/img/gallery/ph09.jpg" alt="Event coverage 9" loading="lazy"></a>
+        <a class="m-item tall reveal" href="assets/img/gallery/ph10.jpg" data-lightbox="gallery"><img src="assets/img/gallery/ph10.jpg" alt="Event coverage 10" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph11.jpg" data-lightbox="gallery" data-delay="1"><img src="assets/img/gallery/ph11.jpg" alt="Event coverage 11" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph12.jpg" data-lightbox="gallery" data-delay="2"><img src="assets/img/gallery/ph12.jpg" alt="Event coverage 12" loading="lazy"></a>
+        <a class="m-item tall reveal" href="assets/img/gallery/ph13.jpg" data-lightbox="gallery"><img src="assets/img/gallery/ph13.jpg" alt="Event coverage 13" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph14.jpg" data-lightbox="gallery" data-delay="1"><img src="assets/img/gallery/ph14.jpg" alt="Event coverage 14" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph15.jpg" data-lightbox="gallery" data-delay="2"><img src="assets/img/gallery/ph15.jpg" alt="Event coverage 15" loading="lazy"></a>
+        <a class="m-item tall reveal" href="assets/img/gallery/ph16.jpg" data-lightbox="gallery"><img src="assets/img/gallery/ph16.jpg" alt="Event coverage 16" loading="lazy"></a>
+        <a class="m-item reveal" href="assets/img/gallery/ph17.jpg" data-lightbox="gallery" data-delay="1"><img src="assets/img/gallery/ph17.jpg" alt="Event coverage 17" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AWARDS / ACHIEVEMENTS ===== -->
+  <section class="section awards" id="awards">
+    <div class="container">
+      <p class="sec-tag reveal" data-i18n="aw.tag">// 05 — HIGHLIGHTS</p>
+      <h2 class="sec-title reveal" data-delay="1" data-i18n-html="aw.title">Milestones &amp; <span class="grad-text">recognition</span></h2>
+
+      <!-- Instructor -->
+      <div class="award-block">
+        <div class="award-media reveal">
+          <div class="video-facade" data-video="JpR0144wlgc">
+            <img src="assets/img/thumbs/workshop.jpg" alt="Video editing workshop" loading="lazy">
+            <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <div class="award-thumbs">
+            <a href="assets/img/achieve/instructor-1.jpg" data-lightbox="inst"><img src="assets/img/achieve/instructor-1.jpg" alt="Instructor session" loading="lazy"></a>
+            <a href="assets/img/achieve/instructor-2.jpg" data-lightbox="inst"><img src="assets/img/achieve/instructor-2.jpg" alt="Instructor session" loading="lazy"></a>
+            <a href="assets/img/achieve/instructor-3.jpg" data-lightbox="inst"><img src="assets/img/achieve/instructor-3.jpg" alt="Instructor session" loading="lazy"></a>
+          </div>
+        </div>
+        <div class="award-body">
+          <span class="award-year reveal" data-i18n="aw.i.badge">INSTRUCTOR</span>
+          <h3 class="reveal" data-delay="1" data-i18n="aw.i.title">Digital Creator Initiative — Ministry of Youth &amp; Sports</h3>
+          <p class="reveal" data-delay="2" data-i18n-html="aw.i.para">
+            Selected as an <strong>Instructor</strong> to lead a specialized session on <strong>Video Editing &amp; Content Creation</strong> within
+            the national "Digital Content Creator" initiative by the Egyptian Ministry of Youth and Sports × Wisdom House — sharing how to find
+            the right rhythm and build real stories that stay with the audience.
+          </p>
+          <a href="https://www.facebook.com/photo.php?fbid=122108751081240277&set=pb.61587208325077.-2207520000&type=3" target="_blank" rel="noopener" class="inline-link reveal" data-delay="3" data-i18n="aw.link">Watch the post →</a>
+        </div>
+      </div>
+
+      <!-- Aqari Alyoum -->
+      <div class="award-block reverse">
+        <div class="award-media reveal">
+          <div class="video-facade" data-video="3TK1je_Dqlo">
+            <img src="assets/img/thumbs/ceo.jpg" alt="CEO feedback — Aqari Alyoum" loading="lazy">
+            <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+          </div>
+        </div>
+        <div class="award-body">
+          <span class="award-year reveal" data-i18n="aw.a.badge">HONORED</span>
+          <h3 class="reveal" data-delay="1" data-i18n="aw.a.title">Honored by Aqari Alyoum Real Estate</h3>
+          <p class="reveal" data-delay="2" data-i18n-html="aw.a.para">
+            A full year as <strong>Videographer &amp; Video Editor</strong> in the marketing department at
+            <a href="https://aqarialyoum.com/" target="_blank" rel="noopener" class="inline-link">Aqari Alyoum for Real Estate Development</a> —
+            one of Egypt's leading real estate giants — crafting visual stories for major property developments nationwide. Honored at the annual
+            company ceremony, an event I proudly supervised in videography and production.
+          </p>
+        </div>
+      </div>
+
+      <!-- Green Reels -->
+      <div class="award-block">
+        <div class="award-media reveal">
+          <div class="video-facade ext" data-video="2Q46LaMFujs" data-href="https://www.youtube.com/watch?v=2Q46LaMFujs" title="">
+            <img src="assets/img/thumbs/greenreels-vlog.jpg" alt="Youth Green Reels journey vlog" loading="lazy">
+            <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+            <span class="ext-note"><i class="fa-brands fa-youtube"></i> YouTube</span>
+          </div>
+          <div class="award-thumbs two">
+            <a href="assets/img/achieve/greenreels-2.jpg" data-lightbox="gr"><img src="assets/img/achieve/greenreels-2.jpg" alt="Youth Green Reels ceremony" loading="lazy"></a>
+            <a href="assets/img/achieve/greenreels-3.jpg" data-lightbox="gr"><img src="assets/img/achieve/greenreels-3.jpg" alt="Youth Green Reels stage" loading="lazy"></a>
+          </div>
+        </div>
+        <div class="award-body">
+          <span class="award-year reveal">🏆 <span data-i18n="aw.g.badge">TOP 10 / 206</span></span>
+          <h3 class="reveal" data-delay="1" data-i18n="aw.g.title">Youth Green Reels — Competition Winner</h3>
+          <p class="reveal" data-delay="2" data-i18n-html="aw.g.para">
+            My reel about <strong>carbon footprint awareness</strong> was chosen among the <strong>Top 10 winners out of 206 videos</strong>
+            in the first edition of the Youth Green Reels initiative — organized by EC4SDF and CEDARE under the support of the Ministry of
+            Social Solidarity, Environment, and Youth &amp; Sports. From idea to final cut, every part of this project was made entirely by myself.
+          </p>
+          <a href="https://www.facebook.com/share/p/1BRzexfCGU/" target="_blank" rel="noopener" class="inline-link reveal" data-delay="3" data-i18n="aw.link2">Watch the post →</a>
+        </div>
+      </div>
+
+      <!-- DCC -->
+      <div class="award-block reverse">
+        <div class="award-media reveal">
+          <a href="assets/img/achieve/dcc-1.jpg" data-lightbox="dcc" class="award-img-main"><img src="assets/img/achieve/dcc-1.jpg" alt="Digital Content Creator initiative" loading="lazy"></a>
+          <div class="award-thumbs two">
+            <a href="assets/img/achieve/dcc-2.jpg" data-lightbox="dcc"><img src="assets/img/achieve/dcc-2.jpg" alt="Digital Content Creator ceremony" loading="lazy"></a>
+            <a href="assets/img/achieve/dcc-3.jpg" data-lightbox="dcc"><img src="assets/img/achieve/dcc-3.jpg" alt="Digital Content Creator stage" loading="lazy"></a>
+          </div>
+        </div>
+        <div class="award-body">
+          <span class="award-year reveal" data-i18n="aw.d.badge">SELECTED CREATOR</span>
+          <h3 class="reveal" data-delay="1" data-i18n="aw.d.title">Digital Content Creator — National Initiative</h3>
+          <p class="reveal" data-delay="2" data-i18n-html="aw.d.para">
+            Selected as a digital creator among <strong>4,000+ applicants</strong> after passing a rigorous interview and skill evaluation —
+            a national initiative focused on professional excellence in <strong>Photography, Video Editing (Montage), and Digital Innovation</strong>,
+            empowering creators to produce content aligned with Egypt's digital transformation goals.
+          </p>
+          <a href="https://www.facebook.com/photo?fbid=1339730964862851&set=a.141788544657105" target="_blank" rel="noopener" class="inline-link reveal" data-delay="3" data-i18n="aw.link3">Watch the post →</a>
+        </div>
+      </div>
+
+      <!-- Teethifiy -->
+      <div class="award-block">
+        <div class="award-media reveal">
+          <a href="assets/img/achieve/teethifiy-1.png" data-lightbox="teeth" class="award-img-main light"><img src="assets/img/achieve/teethifiy-1.png" alt="Teethifiy graduation project" loading="lazy"></a>
+          <div class="award-thumbs two">
+            <a href="assets/img/achieve/teethifiy-2.png" data-lightbox="teeth"><img src="assets/img/achieve/teethifiy-2.png" alt="Teethifiy app" loading="lazy"></a>
+            <a href="assets/img/achieve/teethifiy-3.png" data-lightbox="teeth"><img src="assets/img/achieve/teethifiy-3.png" alt="Teethifiy series" loading="lazy"></a>
+          </div>
+        </div>
+        <div class="award-body">
+          <span class="award-year reveal" data-i18n="aw.t.badge">🎓 GRADUATION PROJECT</span>
+          <h3 class="reveal" data-delay="1" data-i18n="aw.t.title">Teethifiy — Computer Science, Excellent Honors</h3>
+          <p class="reveal" data-delay="2" data-i18n-html="aw.t.para">
+            Graduated in Computer Science with <strong>Excellent Honors and Distinction</strong>. My graduation project: a mobile app connecting
+            dental students in Egypt with patients — patient matching, appointment scheduling, and real-time feedback. I also
+            <strong>produced and edited a 6-episode YouTube series (عايز أتخرج)</strong> documenting the entire journey.
+          </p>
+          <a href="https://www.youtube.com/watch?v=vNBOFbC9fSY&list=PL-xz3i03E5RUHflTeNbv0-Zvwie_3HuK_" target="_blank" rel="noopener" class="btn btn-sm btn-outline reveal" data-delay="3"><i class="fa-brands fa-youtube"></i> <span data-i18n="aw.t.btn">Watch the Series</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEEDBACK ===== -->
+  <section class="section feedback" id="feedback">
+    <div class="container">
+      <p class="sec-tag reveal" data-i18n="fb.tag">// 06 — CLIENT FEEDBACK</p>
+      <h2 class="sec-title reveal" data-delay="1" data-i18n-html="fb.title">What my clients <span class="grad-text">say about me</span></h2>
+      <p class="sec-desc reveal" data-delay="2" data-i18n="fb.desc">Real reactions to my edits — shared with permission.</p>
+
+      <article class="video-card fb-featured reveal">
+        <div class="video-facade" data-video="7x-UpE_FesQ">
+          <img src="assets/img/thumbs/aboflah.jpg" alt="Aboflah live reaction on my edit" loading="lazy">
+          <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+        </div>
+        <div class="video-meta">
+          <div><h3 data-i18n="fb.feat.title">Aboflah — Live Reaction on my edit — (The biggest content creator in the Middle East)</h3></div>
+          <span class="fb-badge"><i class="fa-solid fa-fire"></i> FEATURED</span>
+        </div>
+      </article>
+
+      <div class="video-grid four">
+        <article class="video-card mini reveal">
+          <div class="video-facade" data-video="sVCJQrGBZoo">
+            <img src="assets/img/thumbs/dyler-ar.jpg" alt="Dyler feedback — recorded live from Twitch" loading="lazy">
+            <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+            <div class="mini-meta"><h3 data-i18n="fb.m1t">Dyler's Feedback</h3><p data-i18n="fb.m1s">Recorded live from his Twitch stream</p></div>
+          </div>
+        </article>
+        <article class="video-card mini reveal" data-delay="1">
+          <div class="video-facade" data-video="tArJNnVkNLk">
+            <img src="assets/img/thumbs/dyler-en.jpg" alt="Dyler feedback — Arabic version" loading="lazy">
+            <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+            <div class="mini-meta"><h3 data-i18n="fb.m2t">Dyler's Feedback</h3><p data-i18n="fb.m2s">(Arabic version)</p></div>
+          </div>
+        </article>
+        <article class="video-card mini reveal" data-delay="2">
+          <div class="video-facade" data-video="VRCmUGgRgZw">
+            <img src="assets/img/thumbs/fans.jpg" alt="Dyler feedback — English version" loading="lazy">
+            <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+            <div class="mini-meta"><h3 data-i18n="fb.m3t">Dyler's Feedback</h3><p data-i18n="fb.m3s">(English version)</p></div>
+          </div>
+        </article>
+        <article class="video-card mini reveal" data-delay="3">
+          <div class="video-facade" data-video="ORWSqI09WTA">
+            <img src="assets/img/thumbs/ag.jpg" alt="AG Abdullah feedback" loading="lazy">
+            <span class="play-btn sm"><i class="fa-solid fa-play"></i></span>
+            <div class="mini-meta"><h3 data-i18n="fb.m4t">AG l عبدالله — Feedback</h3><p data-i18n="fb.m4s">YouTuber · +129K Subscribers</p></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="shots-strip reveal">
+        <p class="shots-title"><i class="fa-solid fa-comment-dots"></i> <span data-i18n="fb.shots">Written feedback from clients</span></p>
+        <div class="shots-row">
+          <figure>
+            <a href="assets/img/feedback/fb-shot-2.png" data-lightbox="fb"><img src="assets/img/feedback/fb-shot-2.png" alt="Fans comments" loading="lazy"></a>
+            <figcaption data-i18n="shot.a">Fans' comments on my videos</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/feedback/fb-shot-3.png" data-lightbox="fb"><img src="assets/img/feedback/fb-shot-3.png" alt="Badreya — Banaat FC president" loading="lazy"></a>
+            <figcaption data-i18n="shot.b">Badreya — Banaat FC Club President</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/feedback/banaat-1.png" data-lightbox="fb"><img src="assets/img/feedback/banaat-1.png" alt="Moskoo feedback" loading="lazy"></a>
+            <figcaption data-i18n="shot.c">Moskoo — YouTuber with +2M subscribers</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MILITARY / READY TO TRAVEL ===== -->
+  <section class="section travel" id="travel">
+    <div class="container">
+      <p class="sec-tag center reveal" data-i18n="tr.tag">// READY TO TRAVEL &amp; WORK</p>
+      <h2 class="sec-title center reveal" data-delay="1" data-i18n-html="tr.title">Military service <span class="grad-text">completed</span></h2>
+      <div class="travel-wrap">
+        <div class="travel-badge reveal" data-i18n-html="tr.badge"><i class="fa-solid fa-passport"></i> Finished my military service<br>Ready to <span class="grad-text">travel &amp; work</span></div>
+        <div class="travel-grid">
+          <div class="travel-media reveal">
+            <a href="assets/img/docs/military.jpg" data-lightbox="mil" class="award-img-main"><img src="assets/img/docs/military.jpg" alt="My military service certificate" loading="lazy"></a>
+          </div>
+          <div class="travel-body">
+            <h3 class="reveal" data-delay="1" data-i18n="tr.title2">I've completed my military service</h3>
+            <p class="reveal" data-delay="2" data-i18n-html="tr.para">
+              I've officially finished my military service — I'm <strong>fully committed to work</strong> and <strong>open to travel &amp; relocation</strong>
+              anywhere in the world. No obligations holding me back: ready to join your team, on-site or remote, whenever you are.
+            </p>
+            <div class="travel-stats reveal" data-delay="3">
+              <div class="ts"><span>✅</span><span data-i18n="tr.s1">Service Completed</span></div>
+              <div class="ts"><span>✈️</span><span data-i18n="tr.s2">Open to Travel</span></div>
+              <div class="ts"><span>💼</span><span data-i18n="tr.s3">Ready to Work</span></div>
+            </div>
+            <a href="#contact" class="btn btn-primary reveal" data-delay="4"><i class="fa-solid fa-envelope"></i> <span data-i18n="tr.cta">Let's Work Together</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <p class="sec-tag center reveal" data-i18n="ct.tag">// 07 — GET IN TOUCH</p>
+      <h2 class="contact-title reveal" data-delay="1" data-i18n-html="ct.title">Let's create something<br><span class="grad-text">people remember.</span></h2>
+      <p class="contact-sub reveal" data-delay="2" data-i18n="ct.sub">Whether you're a brand, an agency, or a company looking to hire — let's talk about how we can grow together.</p>
+      <div class="contact-actions reveal" data-delay="3">
+        <a href="mailto:g35degy@gmail.com?subject=Work%20Inquiry%20—%20Let%27s%20Collaborate" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> <span data-i18n="ct.email">Send me an Email</span></a>
+        <a href="https://wa.me/201142256322?text=Hello%20Youssef%2C%20I%20would%20like%20to%20work%20with%20you.%20When%20would%20be%20a%20good%20time%20to%20talk%3F" target="_blank" rel="noopener" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+      <div class="socials reveal" data-delay="4">
+        <a href="https://www.facebook.com/yousef.mostafa.98892" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/iuseedx/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@iuseedx" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/@Useedx" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">USEED<span class="accent">.</span></span>
+      <p data-i18n="footer.text">© 2026 Youssef Mostafa — Crafted frame by frame.</p>
+      <a href="#hero" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/201142256322?text=Hello%20Youssef%2C%20I%20would%20like%20to%20work%20with%20you.%20When%20would%20be%20a%20good%20time%20to%20talk%3F" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wa-tip" data-i18n="wa.tip">Chat on WhatsApp</span>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <figure><img src="" alt="" id="lbImg"></figure>
+    <button class="lb-next" id="lbNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="vmodal" id="vmodal" aria-hidden="true">
+    <div class="vmodal-backdrop" id="vmodalBackdrop"></div>
+    <div class="vmodal-box">
+      <button class="vmodal-close" id="vmodalClose" aria-label="Close video"><i class="fa-solid fa-xmark"></i></button>
+      <div class="vmodal-frame" id="vmodalFrame"></div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
